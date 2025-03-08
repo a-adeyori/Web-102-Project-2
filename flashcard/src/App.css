@@ -1,4 +1,5 @@
 #root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -7,10 +8,14 @@
 
 /* Add these styles to your App.css or separate CSS file */
 .flashcard {
+  color:black;
   width: 500px;
   height: 300px;
+  margin-left: 155px;
   perspective: 1000px; /* Give the card a 3D space */
 }
+
+
 
 .card {
   width: 100%;
@@ -35,10 +40,10 @@
 }
 
 .front {
-  background-color: blue; /* Customize as needed */
+  background-color:white; /* Customize as needed */
 }
 
 .back {
-  background-color: red; /* Customize as needed */
+  background-color: white; /* Customize as needed */
   transform: rotateY(180deg); /* Make the back face visible after flip */
 }
