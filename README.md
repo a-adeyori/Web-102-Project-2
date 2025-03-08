@@ -33,7 +33,7 @@ https://github.com/user-attachments/assets/418591f8-6caf-4fbd-8e6b-11bcf333c36f
 
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with ScreenPal  
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
