@@ -29,7 +29,11 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
-https://github.com/user-attachments/assets/418591f8-6caf-4fbd-8e6b-11bcf333c36f
+
+
+https://github.com/user-attachments/assets/80e61ce0-8168-4e0e-a5fa-b26fcb7f14d2
+
+
 
 
 <!-- Replace this with whatever GIF tool you used! -->
