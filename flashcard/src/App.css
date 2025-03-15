@@ -47,3 +47,52 @@
   background-color: white; /* Customize as needed */
   transform: rotateY(180deg); /* Make the back face visible after flip */
 }
+
+h2{
+  margin: 0;
+}
+
+/* Input Field */
+.input-field {
+  padding: 8px;
+  border-radius: 5px;
+  width: 100%;
+  border: 2px solid gray; /* Default border */
+}
+
+/* Correct and Wrong Answer Styles */
+.correct {
+  border: 2px solid green !important;
+}
+
+.wrong {
+  border: 2px solid red !important;
+}
+
+/* Button Styles */
+.submit-button {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: black;
+}
+
+.shuffle-button {
+  padding: 10px 15px;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.shuffle-button:hover {
+  background-color: black;
+}

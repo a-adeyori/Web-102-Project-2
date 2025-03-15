@@ -16,7 +16,7 @@ function App() {
     { question: "Which world champion is considered one of the greatest chess players of all time?", answer: "Magnus Carlsen" },
     { question: "What move allows a king and a rook to switch places under certain conditions?", answer: "Castling" }
   ];
-
+  const [guess, setGuess] = useState('')
   const [slide , setSlide] = useState(0)
   const [flipped, setFlipped] = useState(false)
 
@@ -35,6 +35,22 @@ function App() {
     setFlipped(!flipped)
   }
 
+  const checkAnswer = ()=>{
+    if (!guess.trim()) {
+      return ""; // No styling if input is empty
+    }
+    return guess.trim().toLowerCase() === questions[slide].answer.toLowerCase()
+      ? "correct"
+      : "wrong";
+  };
+
+  const shuffleQuestion=()=>{
+    const randomIndex = Math.floor(Math.random()*questionList.length)
+    setSlide(randomIndex)
+    setFlipped(false)
+    setGuess('')
+  }
+
 
   return (
     <>
@@ -43,7 +59,12 @@ function App() {
       <h3>Number of cards: 10</h3>
       <Card handleflip={handleflip} isFlipped={flipped} questions={questions} 
       currentIndex={slide} />
-      <Arrows handlePrev = {handlePrev} handleNext={handleNext}/>
+      <div className='guess'>
+      <h2>Guess the answer here: </h2>
+      <input type ='text'placeholder='Enter your guess' value ={guess} onChange={e => setGuess(e.target.value)} className={`input-field ${checkAnswer()}`} />
+      <button onClick={() => checkAnswer()} className="submit-button">Submit Guess</button>
+      </div>
+      <Arrows handlePrev = {handlePrev} handleNext={handleNext}/><button onClick={shuffleQuestion} className="shuffle-button">Shuffle Cards</button>
     </>
     
   )
