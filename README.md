@@ -1,8 +1,8 @@
-# Web Development Project 2 - *ChessMate*
+# Web Development Project 3 - *ChessMate 2.0*
 
 Submitted by: **Adeyori Adekunle**
 
-This web app: **This flashcards help beginner chess players revise fundamental concepts**
+This web app: **Flashcard for mastering fundamental chess concepts**
 
 Time spent: **2** hours spent in total
 
@@ -10,17 +10,17 @@ Time spent: **2** hours spent in total
 
 The following **required** functionality is completed:
 
-- [X] **The title of the card set and some information about it, such as a short description and the total number of cards are displayed**
-- [X] **A single card at a time is displayed, only showing one of the components of the information pair**
-- [X] **A list of card pairs is created**
-- [X] **Clicking on the card shows the corresponding component of the information pair**
-- [X] **Clicking the next button displays a random new card**
+- [X] **The user can enter their guess in a box before seeing the flipside of the card**
+- [X] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [X] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [X] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
 The following **optional** features are implemented:
 
-- [ ] Cards contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
-  - [ ] *visual style implemented*
+- [X] A shuffle button is used to randomize the order of the cards
+- [X] A user's answer may be counted as correct even when it is slightly different from the target answer
+- [ ] A counter displays the user's current and longest streak of correct responses
+- [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
 
 The following **additional** features are implemented:
 
@@ -28,11 +28,11 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a walkthrough of implemented user stories:
 
 
-https://github.com/user-attachments/assets/80e61ce0-8168-4e0e-a5fa-b26fcb7f14d2
 
+https://github.com/user-attachments/assets/b57685b7-1f4d-407a-b5e3-03a19faa1161
 
 
 
@@ -44,8 +44,7 @@ GIF created with ScreenPal
 [peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
-
-Describe any challenges encountered while building the app.
+Had issues with validating answers
 
 ## License
 
