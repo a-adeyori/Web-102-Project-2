@@ -21,11 +21,13 @@ function App() {
   const [flipped, setFlipped] = useState(false)
 
   const handleNext = () => {
+    setGuess('')
     setSlide((prevIndex) => (prevIndex + 1) % questions.length);
     setFlipped(false); 
   };
 
   const handlePrev = () => {
+    setGuess('')
     setSlide((prevIndex) =>
       prevIndex === 0 ? questions.length - 1 : prevIndex - 1
     );
@@ -45,7 +47,7 @@ function App() {
   };
 
   const shuffleQuestion=()=>{
-    const randomIndex = Math.floor(Math.random()*questionList.length)
+    const randomIndex = Math.floor(Math.random()*questions.length)
     setSlide(randomIndex)
     setFlipped(false)
     setGuess('')
